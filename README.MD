@@ -15,7 +15,7 @@ pthread_shop_main.c  -  implementation of main and using global arrays.
 
 There are five shops with goodies.
 
-There are tree parallel "client" threads as well.
+There are three parallel "client" threads as well.
 
 And shop has the only one "delivery" thread.
 
