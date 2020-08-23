@@ -1,10 +1,10 @@
 #include "pthread_shop.h"
 
 /* Global variables for all arrays to operate with in threads */
-shop            shops[SHOPS_COUNT];
-client          clients[CLIENTS_COUNT];
-deliver         delivers[DELIVERS_COUNT];
-pthread_mutex_t mutexes[SHOPS_COUNT];
+extern shop            shops[];
+extern client          clients[];
+extern deliver         delivers[];
+extern pthread_mutex_t mutexes[];
 
 int main() {
     shop_initialization(shops, clients, delivers);

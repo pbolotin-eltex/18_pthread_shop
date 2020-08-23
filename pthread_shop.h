@@ -28,11 +28,6 @@ typedef struct deliver {
     int how_many_goodies_were_added;
 } deliver;
 
-extern shop            shops[SHOPS_COUNT];
-extern client          clients[CLIENTS_COUNT];
-extern deliver         delivers[DELIVERS_COUNT];
-extern pthread_mutex_t mutexes[SHOPS_COUNT];
-
 void* thread_client(void* pdata);
 
 void* thread_deliver(void* pdata);

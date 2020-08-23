@@ -1,5 +1,10 @@
 #include "pthread_shop.h"
 
+shop            shops[SHOPS_COUNT];
+client          clients[CLIENTS_COUNT];
+deliver         delivers[DELIVERS_COUNT];
+pthread_mutex_t mutexes[SHOPS_COUNT];
+
 int shop_initialization(shop* shops, client* clients, deliver* delivers) {
     srandom((unsigned int)time(NULL));
     int i;
